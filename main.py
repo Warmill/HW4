@@ -112,5 +112,5 @@ class City():
 NY = City('New York', 2000)
 LV = City('Las Vegas', 1499)
 
-print(NY)
-print(LV)
+print(NY.name)
+print(LV.name)
