@@ -99,9 +99,10 @@ class City():
             obj.name = name
             obj.population = population
             print(f'Population of {name} is {population}')
+            return obj
         else:
             print(f'Your city {name} is too small')
-        return
+
 
     def __init__(self, name, population):
         self.name = name
