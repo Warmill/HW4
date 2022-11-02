@@ -17,10 +17,12 @@ class Vehicle:
 # 2
 class Bus(Vehicle):
 
-    def __init__(self, max_speed, mileage, seating_capacity):
+    def __init__(self, max_speed, mileage, capacity):
         super(Bus, self).__init__(max_speed, mileage)
-        self.seating_capacity = seating_capacity
+        self.capacity = capacity
 
+    def seating_capacity(self):
+        print(f'seating capacity of bus is {self.capacity}')
 
 # 3
 if issubclass(Bus, Vehicle): print('Class <Bus> is a part of class <Vehicle>')
