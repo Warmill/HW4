@@ -59,10 +59,18 @@ class SchoolBus(School, Bus):
               f'and color is {self.bus_school_color}. A bus carries {self.number_of_students} '
               f'students every day \n')
 
+    def bus_school_col(self):
+        print (f'\n Color of bus is {self.bus_school_color}')
+
+    def seating_cap(self):
+        print(f'\n Seating capacity of bus is {self.seating_capacity}')
+
 
 # 6
 bus1 = SchoolBus(100, 2000, 20, 1, 10, 'yellow')
 bus1.Bus_information()
+bus1.bus_school_col()
+bus1.seating_cap()
 
 
 # 7
